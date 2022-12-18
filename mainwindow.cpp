@@ -11,10 +11,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
     db = QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("./data.db");
-    if(db.open())
-    {
-        qDebug("open");
-    }
+    db.open();
 
     query = new QSqlQuery(db);
     query->exec("CREATE TABLE AD(Название услуги,Специалист,Стоимость,Время)");
