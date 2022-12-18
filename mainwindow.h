@@ -5,7 +5,6 @@
 #include "QPushButton"
 #include "QTableView"
 #include "QSqlDatabase"
-#include "QDebug"
 #include "QSqlQuery"
 #include "QSqlTableModel"
 #include "dobavit.h"
