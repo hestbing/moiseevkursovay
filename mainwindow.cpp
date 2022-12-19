@@ -8,6 +8,10 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     okno = new dobavit(this);
+        
+    l = new QLabel(this);
+    l->setText("Нажмите два раза на строку, чтобы удалить её");
+    l->setGeometry(116,640,282,15);
 
     db = QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("./data.db");
