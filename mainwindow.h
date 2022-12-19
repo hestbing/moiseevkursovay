@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "QPushButton"
+#include "QLabel"
 #include "QTableView"
 #include "QSqlDatabase"
 #include "QSqlQuery"
@@ -34,6 +35,7 @@ private:
     QSqlDatabase db;
     QSqlQuery *query;
     QSqlTableModel *model;
+    QLabel *l;
     int row;
 signals:
   void signal();
